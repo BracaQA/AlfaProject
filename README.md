@@ -7,9 +7,9 @@ Project structure:
 - utils – Helper class
 
 Used:
- <Selenium WebDriver>,
-<Apache POI> 
-<ChromeDriver>
+- Selenium WebDriver,
+- Apache POI,
+- ChromeDriver.
 
 ### TravelsLogin
 Page Object Model with Page Factory is used to find HTML elements of site. 
