@@ -1,19 +1,23 @@
-# Završni projekat IT Bootcamp
-Testiran je sajt https://phptravels.com/demo/
+# Final Project IT Bootcamp
+Tested site: https://phptravels.com/demo/
 
-Struktura projekta je sledeća:
-- pages - pom klase
-- tests – testovi
-- utils - pomoćne klase
+Project structure:
+- pages – POM&PageFactory classes
+- tests – Tests
+- utils – Helper class
 
-Korišćen je Selenium WebDriver, Apache POI i ChromeDriver.
+Used:
+ <Selenium WebDriver>,
+<Apache POI> 
+<ChromeDriver>
 
 ### TravelsLogin
 POM pribavlja elemente označene na slici. Napisan je test (**TravelsLogInTest**) koji ispituje login korisnika. 
 ![](https://i.imgur.com/a6m77VK.png)
 
 ### TravelsMenu
-Testiran je levi meni sajta -  TravelsMenu.  POM pribavlja objekte označene na slici. Test **TravelsMenuCheckTest** testira da li meni radi, tj. da li je moguće posetiti sve stranice koje su pribavljene.
+Left side of site is tested -  TravelsMenu.  PageFactory is used to finds elements. 
+Test **TravelsMenuCheckTest** test menu, and all pages.
 
 ![](https://i.imgur.com/L5q0mUP.png)
 
@@ -22,31 +26,32 @@ Testiran je levi meni sajta -  TravelsMenu.  POM pribavlja objekte označene na 
 ![](https://i.imgur.com/XkKF9Ea.png)
 
 ### TravelsCars
-Na stanici za Rent-a-Car napisan je POM i odgovarajući test (**CarsCountTest**) koji ispituje:
-- Da li je broj modela koji rentiramo jednak 10 - *Name*
-- Da li je ukupan broj narudžbina veći od 50 – *Orders* 
+On page **Rent-a-Car**-- PageFactory test (**CarsCountTest**) which:
+- Is number of rented models equal to  10 - *Name*
+- Is total customer orders higher than 50 – *Orders* 
 
 ![](https://i.imgur.com/4XxATT3.png)
 
 ### TravelsCarsExtras
-Na stranici Cars-Extras omogućeno je dodavanje ekstra stvari za auto. Popunjena su sva polja na slici i napisan je test (**TravelCarsExtrasAddTest**) da li je uneta stvar dodata u tabeli. 
+Adding new car is tested on page **Cars-Extras**. All fields are filled (like on picture).
+Test -**TravelCarsExtrasAddTest** check is car added in table.
+Also in this test is shown how to remove Pop-Up message.
 
 ![](https://i.imgur.com/dczW5qC.png)
 
 ![](https://i.imgur.com/wulvckW.png)
 
 ### TravelCustomer
-Na stranici Accounts - Customers je omoguceno dodavanje naloga korisnika.
+Adding new customer is shown on page **Accounts – Customers**.
 
-Informacije se unose u polja koja su oznacena crvenom bojom.
+All info are added in fields (like on picture).
 
-Zatim je testirano (**TravelsCustomerEditTest**) da li je korisnik uspesno dodat uz pomoć Search opcije ispod tabele.
+**TravelsCustomerEditTest** use <Search> option to check if customer is added.
 
 ![](https://i.imgur.com/EzQBMod.png)
 
 ![](https://i.imgur.com/Hd25yOT.png)
 
-### TravelsLogInUsingApachePoi
-Testirano je da li je moguće izvršiti login korisnika koristeći direktno podatke iz excel tabele.
+### TravelsLogInUsingApachePoi use excel table to login admin.
 
 ![](https://i.imgur.com/vJsfgnw.png)
