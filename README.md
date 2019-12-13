@@ -12,12 +12,13 @@ Used:
 <ChromeDriver>
 
 ### TravelsLogin
-POM pribavlja elemente označene na slici. Napisan je test (**TravelsLogInTest**) koji ispituje login korisnika. 
+Page Object Model with Page Factory is used to find HTML elements of site. 
+**TravelsLogInTest** check admin login.
 ![](https://i.imgur.com/a6m77VK.png)
 
 ### TravelsMenu
 Left side of site is tested -  TravelsMenu.  PageFactory is used to finds elements. 
-Test **TravelsMenuCheckTest** test menu, and all pages.
+**TravelsMenuCheckTest** tests menu and all pages.
 
 ![](https://i.imgur.com/L5q0mUP.png)
 
